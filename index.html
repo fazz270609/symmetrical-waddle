@@ -40,7 +40,6 @@
             }
         }
 
-        /* Foto nggak punya border putih, langsung blend */
         .profile-pic {
             width: 250px;
             height: 300px;
@@ -69,32 +68,28 @@
             right: 15px;
         }
 
-        /* Tambahan emoji */
-        .emoji-container {
-            position: absolute;
-            top: 10px; /* Sejajar di bagian atas */
-            right: 15px;
-            display: flex;
-            gap: 5px; /* Jarak antara roti dan Pop Ice */
-        }
-
         .emoji {
             font-size: 20px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+
+        .emoji2 {
+            font-size: 20px;
+            position: absolute;
+            top: 10px;
+            left: 15px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="faya.png" alt="Faya" class="profile-pic">
+        <img src="./faya.png" alt="Faya" class="profile-pic">
         <h1 class="title">I Love Fayaaa <span class="heart">❤️</span></h1>
         <p class="small-text">"Bagaimana dengan ajak??"</p>
-        
-        <!-- Container untuk roti dan Pop Ice -->
-        <div class="emoji-container">
-            <p class="emoji">🍞</p> <!-- Roti Goreng -->
-            <p class="emoji">🥤</p> <!-- Pop Ice -->
-        </div>
+        <p class="emoji">🍞🥤</p> <!-- Roti Goreng + Pop Ice -->
     </div>
 
 </body>
