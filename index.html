@@ -3,23 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Love You Faya</title>
+    <title>I Love Fayaaa</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff4e50, #fc913a);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Foto nggak punya border putih, langsung blend */
+        .profile-pic {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 15px;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .heart {
+            color: red;
+            font-size: 25px;
+        }
+
+        .small-text {
+            font-size: 12px;
+            opacity: 0.8;
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+        }
+
+        /* Tambahan emoji */
+        .emoji-container {
+            position: absolute;
+            top: 10px; /* Sejajar di bagian atas */
+            right: 15px;
+            display: flex;
+            gap: 5px; /* Jarak antara roti dan Pop Ice */
+        }
+
+        .emoji {
+            font-size: 20px;
+        }
+    </style>
 </head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #dcdcdc; font-family: 'Poppins', sans-serif;">
+<body>
 
-    <div style="width: 300px; height: 400px; background: white; border-radius: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative;">
+    <div class="container">
+        <img src="faya.png" alt="Faya" class="profile-pic">
+        <h1 class="title">I Love Fayaaa <span class="heart">❤️</span></h1>
+        <p class="small-text">"Bagaimana dengan ajak??"</p>
         
-        <div style="width: 60px; height: 60px; background: red; position: relative; transform: rotate(-45deg);">
-            <div style="content: ''; position: absolute; width: 60px; height: 60px; background: red; border-radius: 50%; top: -30px; left: 0;"></div>
-            <div style="content: ''; position: absolute; width: 60px; height: 60px; background: red; border-radius: 50%; left: 30px; top: 0;"></div>
+        <!-- Container untuk roti dan Pop Ice -->
+        <div class="emoji-container">
+            <p class="emoji">🍞</p> <!-- Roti Goreng -->
+            <p class="emoji">🥤</p> <!-- Pop Ice -->
         </div>
-
-        <h1 style="font-size: 20px; font-weight: 600; margin-top: 20px; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">I Love You Faya</h1>
-        <p style="font-size: 14px; color: gray; margin-top: -10px;">sayang jiki ajak?</p>
-        
-        <div style="width: 30px; height: 30px; background: red; position: absolute; bottom: 20px; border-radius: 50%;"></div>
-    
     </div>
 
 </body>
