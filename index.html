@@ -27,6 +27,10 @@
             backdrop-filter: blur(10px);
             animation: fadeIn 1.5s ease-in-out;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
         @keyframes fadeIn {
@@ -51,7 +55,6 @@
         .title {
             font-size: 30px;
             font-weight: 700;
-            margin-top: 15px;
             text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
         }
 
@@ -61,39 +64,40 @@
         }
 
         .small-text {
-            font-size: 12px;
+            font-size: 10px; /* Dikecilkan */
             opacity: 0.8;
+        }
+
+        .emoji-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
             position: absolute;
             bottom: 10px;
-            right: 15px;
+            left: 0;
+            right: 0;
+            padding: 0 20px;
         }
 
         .emoji {
             font-size: 20px;
-            position: absolute;
-            top: 10px;
-            right: 15px;
-        }
-
-        .emoji2 {
-            font-size: 20px;
-            position: absolute;
-            bottom: 10px;
-            left: 15px; /* Pindahkan Pop Ice ke kiri bawah */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- GANTI URL INI DENGAN LINK RAW GITHUB -->
         <img src="https://raw.githubusercontent.com/fazz270609/symmetrical-waddle/main/faya.png" 
              alt="Faya" class="profile-pic">
 
         <h1 class="title">I Love Youu Fayaa <span class="heart">❤️</span></h1>
-        <p class="small-text">"Bagaimana dengan ajak??"</p>
-        <p class="emoji">🍞</p> <!-- Roti Goreng -->
-        <p class="emoji2">🥤</p> <!-- Pop Ice sekarang di kiri bawah -->
+        <p class="small-text">"ajakkk"</p> <!-- Teks diperbarui dan ukurannya lebih kecil -->
+
+        <!-- Roti Goreng di kiri, Pop Ice di kanan -->
+        <div class="emoji-container">
+            <p class="emoji">🍞</p> 
+            <p class="emoji">🥤</p> 
+        </div>
     </div>
 
 </body>
