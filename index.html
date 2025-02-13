@@ -50,6 +50,7 @@
             object-fit: cover;
             border-radius: 30px;
             box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+            position: relative;
         }
 
         .title {
@@ -64,40 +65,39 @@
         }
 
         .small-text {
-            font-size: 10px; /* Dikecilkan */
+            font-size: 10px; /* Ukuran diperkecil */
             opacity: 0.8;
         }
 
-        .emoji-container {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
+        /* Posisi roti goreng di atas kanan foto */
+        .emoji-roti {
+            font-size: 20px;
             position: absolute;
-            bottom: 10px;
-            left: 0;
-            right: 0;
-            padding: 0 20px;
+            top: -10px;
+            right: -10px;
         }
 
-        .emoji {
+        /* Posisi pop ice di bawah kiri foto */
+        .emoji-popice {
             font-size: 20px;
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://raw.githubusercontent.com/fazz270609/symmetrical-waddle/main/faya.png" 
-             alt="Faya" class="profile-pic">
+        <div style="position: relative;">
+            <img src="https://raw.githubusercontent.com/fazz270609/symmetrical-waddle/main/faya.png" 
+                 alt="Faya" class="profile-pic">
+            <p class="emoji-roti">🍞</p> <!-- Roti Goreng di atas kanan -->
+            <p class="emoji-popice">🥤</p> <!-- Pop Ice di bawah kiri -->
+        </div>
 
         <h1 class="title">I Love Youu Fayaa <span class="heart">❤️</span></h1>
-        <p class="small-text">"ajakkk"</p> <!-- Teks diperbarui dan ukurannya lebih kecil -->
-
-        <!-- Roti Goreng di kiri, Pop Ice di kanan -->
-        <div class="emoji-container">
-            <p class="emoji">🍞</p> 
-            <p class="emoji">🥤</p> 
-        </div>
+        <p class="small-text">"ajaakkk"</p> <!-- Teks diperbarui dan ukurannya lebih kecil -->
     </div>
 
 </body>
