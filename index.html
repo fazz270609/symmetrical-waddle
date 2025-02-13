@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Love Youu Fayaaa</title>
+    <title>I Love Fayaaa</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -27,6 +27,10 @@
             backdrop-filter: blur(10px);
             animation: fadeIn 1.5s ease-in-out;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
         @keyframes fadeIn {
@@ -46,12 +50,12 @@
             object-fit: cover;
             border-radius: 30px;
             box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+            position: relative;
         }
 
         .title {
             font-size: 30px;
             font-weight: 700;
-            margin-top: 15px;
             text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
         }
 
@@ -61,36 +65,39 @@
         }
 
         .small-text {
-            font-size: 10px;
+            font-size: 10px; /* Ukuran diperkecil */
             opacity: 0.8;
-            position: absolute;
-            bottom: 10px;
-            right: 15px;
         }
 
-        .emoji {
+        /* Posisi roti goreng di atas kanan foto */
+        .emoji-roti {
             font-size: 20px;
             position: absolute;
-            top: 10px;
-            right: 15px;
+            top: -10px;
+            right: -10px;
         }
 
-        .emoji2 {
+        /* Posisi pop ice di bawah kiri foto */
+        .emoji-popice {
             font-size: 20px;
             position: absolute;
-            bottom: 10px;
-            left: 15px;
+            bottom: -10px;
+            left: -10px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="faya.png" alt="Faya" class="profile-pic">
-        <h1 class="title">I Love Youu Fayaaa <span class="heart">❤️</span></h1>
-        <p class="small-text">"Ajaakkk"</p>
-        <p class="emoji">🍞</p> <!-- Roti Goreng di kanan atas -->
-        <p class="emoji2">🥤</p> <!-- Pop Ice di kiri bawah -->
+        <div style="position: relative;">
+            <img src="https://raw.githubusercontent.com/fazz270609/symmetrical-waddle/main/faya.png" 
+                 alt="Faya" class="profile-pic">
+            <p class="emoji-roti">🍞</p> <!-- Roti Goreng di atas kanan -->
+            <p class="emoji-popice">🥤</p> <!-- Pop Ice di bawah kiri -->
+        </div>
+
+        <h1 class="title">I Love Youu Fayaa <span class="heart">❤️</span></h1>
+        <p class="small-text">"ajaakkk"</p> <!-- Teks diperbarui dan ukurannya lebih kecil -->
     </div>
 
 </body>
